@@ -1,0 +1,171 @@
+.concept {
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 130px 100px 100px 100px;
+
+        .collapse-preview {
+            display: none;
+        }
+
+        .overview {
+            .question {
+                font-weight: 600;
+                font-size: 40px;
+                line-height: 60px;
+                /* identical to box height */
+                
+                
+                /* black */
+                
+                color: #000000;
+                text-align: center;
+            }
+            .answer {
+                padding: 30px 360px 0px 360px;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                text-align: center;
+                
+                /* text phụ */
+                
+                color: #6D747C;
+
+                text-align: center;
+            }
+        }
+        .diagram {
+            display: flex;
+            padding-top: 50px;  
+            gap: 40px;
+
+            .preview {
+                flex: 1 1 60%;
+                text-align: right;
+
+                img {
+                    width: 100%;
+                }
+            }
+            .advantage {
+                padding-top: 53px;
+                flex: 1 1 40%;
+                // width: 40%;
+                .row {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+
+
+                    .col {
+                        display: flex;
+
+                        .image {
+                        }
+
+                        .line {
+                            position: relative;
+                            top: 30px;
+                            left: -25px;
+                            border-left: 2px dashed #679FEF;
+                            z-index: -1;
+                        }
+
+                        // .content::before {
+                            
+                        // content:"";
+                        // position: absolute;
+                        // z-index: -1;
+                        // top: 0;
+                        // bottom: 0;
+                        // left: 50%;
+                        // height: 100%;
+                        // height: inherit;
+                        // border-left: 2px dashed #679FEF;
+                        // }
+                        .content {
+                            padding-left: 28px; 
+
+                            .title {
+                                font-weight: 600;
+                                font-size: 19px;
+                                padding-top: 5px;
+                                line-height: 28px;
+                                
+                                /* brand2 */
+                                
+                                color: #283445;
+                            }
+                            .description {
+                                padding-top: 8px;
+                                font-weight: 500;
+                                font-size: 14px;
+                                line-height: 21px;
+                                
+                                /* text phụ */
+                                
+                                color: #6D747C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .concept {
+        .container {
+            padding: 130px 4vw 100px 4vw;
+    
+            .overview {
+                .answer {
+                    padding: 30px 20vw 0px 20vw;
+                }
+
+            }
+
+            .diagram {
+                .advantage {
+                    padding-top: calc(53px - (1440px - 100vw) * 13 / 416);
+                    // padding-top: calc(53px - (420px - 30vw));
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .concept {
+        .container {
+            padding: 60px 4vw 100px 4vw;
+            .collapse-preview {
+                display: block;
+                text-align: center;
+                img {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+            .overview {
+                .answer {
+                    padding: 0;
+                    padding-top: 30px;
+                }
+            }
+
+            .diagram {
+                .preview {
+                    display: none;
+                }
+                .advantage {
+                    flex: 0 0 100%;
+                }
+            }
+        }
+    }
+}

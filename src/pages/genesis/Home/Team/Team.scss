@@ -1,0 +1,183 @@
+.genesis-team {
+    background: linear-gradient(268.19deg, rgba(247, 247, 247, 0)  0.89%, rgba(48, 56, 102, 0.08) 82.18%);
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 105px 75px 90px 75px;
+        // transform: matrix(-1, 0, 0, 1, 0, 0);
+
+        .team-title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            /* identical to box height */
+
+            text-align: center;
+
+            /* black */
+
+            color: #000000;
+        }
+
+        .team-description {
+            padding-top: 42px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            padding: 0px 280px;
+
+            /* text phụ */
+
+            color: #6D747C;
+        }
+
+        .team-container {
+            padding-top: 53px;
+            
+            display: flex;
+            flex-direction: row;
+            gap: 39px;
+
+            .member-box {    
+                display: flex;
+                justify-content: center;
+                gap: 39px;
+                width: 50%;
+                .member-card {
+                    background: #FFFFFF;
+                    box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.05);
+                    border-radius: 20px;
+                    flex: 1 1 0px;
+
+                    .member-preview {
+                        border-radius: 20px 20px 0px 0px;
+                        height: 280px;
+
+                        img {
+                            border-radius: 20px 20px 0px 0px;
+                        }
+                    }
+
+                    .member-info {
+                        padding: 28px 0px 28px 28px;
+
+                        .title {
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 30px;
+                            /* identical to box height */
+
+
+                            /* black */
+
+                            color: #000000;
+
+                        }
+
+                        .sub {
+                            padding-top: 8px;
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* identical to box height */
+                            
+                            letter-spacing: -0.03em;
+                            
+                            /* text phụ */
+                            
+                            color: #6D747C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .genesis-team {
+        .container {
+            padding: 105px 4vw 90px 4vw;
+    
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+    
+                .member-box {   
+                    width: 50%;
+                    .member-card {
+                        // min-width: 300px;
+                        background: #FFFFFF;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .genesis-team {
+        .container {
+    
+            .team-description {
+                padding: 0 4vw;
+            }
+            .team-container {
+                flex-direction: column;
+                align-items: center;
+                // gap: 39px;
+    
+                .member-box {    
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+
+                    .member-card {
+                        background: #FFFFFF;
+                        box-shadow: 0px 16px 40px rgba(0, 0, 0, 0.05);
+                        border-radius: 20px;
+                        flex: 1 1 0px;
+    
+                        .member-preview {
+                            border-radius: 20px 20px 0px 0px;
+                            height: 280px;
+                        }
+    
+                        .member-info {
+                            padding: 28px 0px 28px 28px;
+    
+                            .title {
+                                font-weight: 600;
+                                font-size: 20px;
+                                line-height: 30px;
+                                /* identical to box height */
+    
+    
+                                /* black */
+    
+                                color: #000000;
+    
+                            }
+    
+                            .sub {
+                                padding-top: 8px;
+                                font-size: 16px;
+                                line-height: 24px;
+                                /* identical to box height */
+                                
+                                letter-spacing: -0.03em;
+                                
+                                /* text phụ */
+                                
+                                color: #6D747C;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

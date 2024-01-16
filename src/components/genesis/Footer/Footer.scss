@@ -1,0 +1,197 @@
+.genesis-footer {
+    background: #000000;
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 40px 75px 0px 75px;
+        
+        .footer-content {
+            justify-content: space-between;
+            gap: 24px;
+            padding-bottom: 72px;
+            display: flex;
+
+            .nifty {
+                flex: 0 0 30%;
+
+                .nifty-description {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    color: #FFFFFF;
+                }
+            }
+
+            .middle {
+                display: flex;
+                justify-content: space-around;
+                flex: 1 1 40%;
+
+                .company {
+
+                    .company-title {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        /* identical to box height */
+
+
+                        color: #FFFFFF;
+                    }
+
+                    .links {
+                        padding-top: 48px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .link {
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* identical to box height */
+                            
+                            
+                            /* background phụ */
+                            
+                            color: #F7F7F7;
+                            a {
+                                text-decoration: none;
+                                color: #F7F7F7;
+                            }
+                        }
+                    }
+                }
+
+                .portal {
+
+                    .portal-title {
+                        font-weight: 600;
+                        font-size: 20px;
+                        line-height: 30px;
+                        /* identical to box height */
+
+
+                        color: #FFFFFF;
+                    }
+
+                    .links {
+                        padding-top: 48px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .link {
+                            font-size: 16px;
+                            line-height: 24px;
+                            /* identical to box height */
+                            
+                            
+                            /* background phụ */
+                            
+                            color: #F7F7F7;
+                            a {
+                                text-decoration: none;
+                                color: #F7F7F7;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .follow {
+                .follow-title {
+                    padding-top: 150px;
+                    display: inline-block;
+                    border-bottom: 1px solid #797979;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 30px;
+                    /* identical to box height */
+
+
+                    /* white */
+
+                    color: #FFFFFF;
+                }
+
+                .links {
+                    display: flex;
+                    padding-top: 18px;
+                    gap: 16px;
+                }
+            }
+        }
+
+        .copyright {
+            padding: 16px 0px 25px 16px;
+            text-align: center;
+            border-top: 1px solid rgba(220, 220, 231, 0.4);
+            font-size: 16px;
+            line-height: 24px;
+            /* identical to box height */
+
+
+            /* background phụ */
+
+            color: #F7F7F7;
+
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .genesis-footer {
+        .container {
+            padding: 40px 4vw 0px 4vw;
+            
+            .footer-content {
+                gap: 2vw;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1023px) {
+    .genesis-footer {
+        .container {
+            
+            .footer-content {
+                flex-direction: column;
+                justify-content: center;
+
+
+                .middle {
+                    padding-top: 40px;
+                    justify-content: start;
+                    gap: 6vw;
+
+                   .company {
+                        .links {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+        
+                    .portal {
+                        .links {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+    
+                .follow {
+                    .links {
+                        flex-direction: row;
+                    }
+                }
+            }
+        }
+    }
+    
+}

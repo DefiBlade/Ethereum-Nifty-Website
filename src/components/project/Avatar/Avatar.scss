@@ -1,0 +1,65 @@
+.project-avatar {
+    p {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    .avatar-title {
+        margin-top : 1.5rem;
+        color : black !important;
+        font : {
+            size :2rem;
+            weight: 800;
+        }
+        padding: 0;
+    }
+
+    .avatar-content {
+        font-size: 0.875rem;
+        font-weight: 600;
+        line-height: 1.1;
+        padding: 0;
+    }
+
+    .avatar-container {
+        img {
+            left: 10%;
+            width: 5rem;
+            height: 5rem;
+            cursor: pointer;
+            margin-top: 1rem;
+            border-radius: 50%;
+            z-index: 100;
+        }
+    }
+
+    .avatar-description {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        .avatar-label {
+            text-align: right;
+            p {
+                line-height: 0.8rem;
+                text-overflow: ellipsis;
+                font-size: 0.875rem;
+                margin-bottom: 0.5rem;
+            }
+        }
+        .avatar-profile {
+            p {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                line-height: 0.8rem;
+                font-size: 0.875rem;
+                margin-bottom: 0.5rem;
+            }
+            // overflow: hidden;
+        }
+
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .project-avatar {
+        text-align: center;
+    }
+}

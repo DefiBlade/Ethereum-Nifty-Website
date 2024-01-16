@@ -1,0 +1,212 @@
+.platform {
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 80px 75px 80px 75px;
+
+        .platform-header {
+            display: flex;
+            align-items: start;
+            justify-content: space-between;
+
+            .platform-title {
+                flex: 0 1 80%;
+                .title {
+                    font-weight: 600;
+                    font-size: 28px;
+                    line-height: 42px;
+                    /* identical to box height */
+                    
+                    
+                    /* black */
+                    
+                    color: #000000;
+                }
+
+                .description {
+                            
+                    padding-top: 12px;
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+
+                    /* text phụ */
+
+                    color: #6D747C;
+                }
+            }
+            .seemore {
+                flex: 0 1 20%;
+                cursor: pointer;
+                font-weight: 500;
+                font-size: 20px;
+                line-height: 30px;
+                /* identical to box height */
+                
+                text-decoration-line: underline;
+                
+                /* brand2 */
+                
+                color: #283445;
+            }
+        }
+        .platform-content {
+            padding-top: 36px;
+            display: flex;
+
+            .services {
+                display: flex;
+                flex-flow: row wrap;
+
+                .service-card {
+                    width: 50%;
+                    display: block;
+
+                    .service-avatar {
+                        /* white */
+                        display: inline-flex;
+                        background: #FFFFFF;
+                        /* stoke1 */
+
+                        border: 1px solid #DCDCE7;
+                        box-sizing: border-box;
+                        border-radius: 20px;
+                        padding: 15px;
+                    }
+                    .service-content {
+                        padding-top: 24px;
+
+                        .service-title {
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            font-weight: 600;
+                            font-size: 20px;
+                            line-height: 30px;
+                            /* identical to box height */
+                            
+                            
+                            /* brand2 */
+                            
+                            color: #283445;
+                        }
+                        .service-description {
+                            padding-top: 12px;
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            padding-right: 90px;
+                            /* text phụ */
+                            
+                            color: #6D747C;
+                        }
+                    }
+                }
+            }
+        }
+
+        .nifty-project {
+            video {
+                width: 580px;
+                height: 546px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .platform {
+
+        .container {
+            padding: 80px 4vw;
+
+            .platform-content {
+                .services {
+                    flex: 0 1 70%;
+
+                    .service-card {
+
+                        .service-content {
+                            padding: 16px 0px;
+                        }
+                    }
+                }
+
+                .nifty-project {
+                    flex: 1 0 30%;
+
+                    // img {
+                    //     width: 100%;
+                    //     max-width: 100%;
+                    // }
+
+                    video {
+                        width: 100%;
+                        max-width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .platform {
+
+        .container {
+            .platform-header {
+                flex-direction: column;
+
+                .platform-title {
+                    flex: 0 1 100%;
+                }
+                .seemore {
+                    flex: 0 1 100%;
+                }
+            }
+            .platform-content {
+                flex-direction: column;
+
+                .services {
+                    flex-flow: column wrap;
+                    gap: 40px;
+
+                    .service-card {
+                        width: 100%;
+                        display: flex;
+                        align-items: center;
+                        gap: 8vw;
+                        justify-content: space-between;
+
+                        .service-avatar {
+                            vertical-align: middle;
+
+                            .service-image-container {
+                                display: contents;
+                            }
+                        }
+                        .service-content {
+                            .service-description {
+                                padding-right: 4vw;
+                            }
+                        }
+                    }
+
+                    .service-card:nth-child(even) {
+                        flex-direction: row;
+                    }
+
+                    .service-card:nth-child(odd) {
+                        flex-direction: row-reverse;
+                    }
+                }
+
+                .nifty-project {
+                    padding-top: 50px;
+                }
+            }
+        }
+    }
+}

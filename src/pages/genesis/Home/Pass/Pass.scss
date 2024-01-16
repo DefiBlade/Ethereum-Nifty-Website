@@ -1,0 +1,136 @@
+.pass {
+    background: linear-gradient(192.26deg, rgba(30, 58, 205, 0.04) 6.53%, rgba(247, 247, 247, 0) 18.35%);
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 100px 60px 0px 60px;
+
+        .pass-title {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 60px;
+            /* identical to box height */
+
+            text-align: center;
+
+            /* black */
+
+            color: #000000;
+        }
+
+        .pass-container {
+            padding-top: 72px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            
+            .pass-box {
+                display: flex;
+                gap: 30px;
+                flex-direction: row;
+
+                .pass-card {    
+                    width: 50%;
+                    background: #FFFFFF;
+                    /* stoke1 */
+
+                    border: 1px solid #DCDCE7;
+                    box-sizing: border-box;
+                    border-radius: 20px;
+
+                    display: flex;
+                    align-items: flex-start;
+
+                    padding: 40px 75px 16px 40px;
+
+                    .pass-avatar {
+                        display: grid;
+                    }
+
+                    .pass-content {
+                        padding-left: 24px;
+
+                        .title {
+                            font-weight: 600;
+                            font-size: 24px;
+                            line-height: 36px;
+                            /* identical to box height */
+
+
+                            /* brand2 */
+
+                            color: #283445;
+                        }
+
+                        .sub-title {
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 24px;
+                            
+                            /* text phụ */
+                            
+                            color: #6D747C;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .pass {
+        .container {
+            padding: 100px 4vw 0px 4vw;
+            .pass-container {
+                gap: 2vw;
+                
+                .pass-box {
+                    gap: 2vw;
+    
+                    .pass-card {    
+                        border-radius: 20px;
+                        padding: 1vw 4vw 1vw 1vw;
+
+                        .pass-content {
+                            padding-left: .5vw;
+
+                            .title {
+                                font-size: 20px;
+                                line-height: 30px;
+                            }
+
+                            .sub-title {
+                                font-size: 14px;
+                                line-height: 21px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .pass {
+        .container {
+            padding-left: 8vw;
+            padding-right: 8vw;
+    
+            .pass-container {
+                .pass-box {
+                    flex-direction: column;
+    
+                    .pass-card {    
+                        width: 100%;
+                        padding: 3vw 3.5px 3vw 2.5vw;
+                    }
+                }
+            }
+        }
+    }
+}

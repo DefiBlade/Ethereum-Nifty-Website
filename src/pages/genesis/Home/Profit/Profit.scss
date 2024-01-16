@@ -1,0 +1,188 @@
+.profit {
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        padding: 114px 75px 80px 75px;
+
+        .profit-title {
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 42px;
+            /* identical to box height */
+            
+            
+            /* black */
+            
+            color: #000000;
+        }
+
+        .profit-content {
+            display: flex;
+            align-items: flex-end;
+
+            .profit-description {
+                width: 50%;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 24px;
+                
+                /* text phụ */
+                
+                color: #6D747C;
+                
+            }
+
+            .example-project {
+                width: 50%;
+                text-align: center;
+
+                .example-project-button {
+                    cursor: pointer;
+                    display: inline-flex;
+                    padding: 12px 24px;
+                    background: #DCDCE7;
+                    border-radius: 8px;
+
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height */
+
+                    text-transform: uppercase;
+
+                    /* text phụ */
+
+                    color: #6D747C;
+                }
+            }
+        }
+
+        .chart-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .collapse-chart {
+                display: none;
+            }
+            
+            .left-progress {
+                padding-top: 60px;
+                flex: 0 1 35%;
+
+                .row-progress {
+                    padding-top: 28px;
+
+                    .progress-title {
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 8px;
+                        /* identical to box height */
+
+
+                        color: #000000;
+                    }
+                }
+            }
+
+            .chart {
+                flex: 1 1 30%;
+                padding: 75px;
+            }
+
+            .right-progress {
+                padding-top: 60px;
+                flex: 1 0 35%;
+
+                .row-progress {
+                    padding-top: 28px;
+
+                    .progress-title {
+                        text-align: right;
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 24px;
+                        padding-bottom: 8px;
+                        /* identical to box height */
+
+
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .profit {
+
+        .container {
+            padding: 114px 4vw 80px 4vw;
+    
+            .profit-content {
+                flex-direction: column;
+
+                .profit-description {
+                    width: 100%;
+                }
+    
+                .example-project {
+                    width: 100%;
+                    padding-top: 14px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .profit {
+
+        .container {
+            .profit-content {
+                .example-project {
+                    padding-top: 40px;
+
+                    .example-project-button {
+                        bottom: -24px;
+                        position: relative;
+                    }
+                }
+            }
+    
+            .chart-section {
+                flex-direction: column;
+                border: 1px solid #DCDCE7;
+                box-sizing: border-box;
+                border-radius: 36px;
+                padding: 5vw;
+
+                .collapse-chart {
+                    padding-top: 40px;
+                    width: 60%;
+                    margin: auto;
+                    display: block;
+                }
+
+                .chart {
+                    display: none;
+                }
+    
+                .right-progress {
+                    padding-top: 0px;
+    
+                    .row-progress {
+                        .progress-title {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

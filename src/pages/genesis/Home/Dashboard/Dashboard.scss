@@ -1,0 +1,290 @@
+.dashboard {
+
+    .container {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0px 70px;
+
+        .community {
+            flex: 0 0 40%;
+
+            .works {
+                display: none;
+                align-items: center;
+                justify-content: end;
+                padding-right: 70px;
+
+                .play {
+                    padding: 30px;
+                    border-radius: 50%;
+                    border: 1px solid;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        position: absolute;
+                        top: calc(50% - 11px);
+                        left: calc(50% - 6px);
+                    }
+                }
+
+                .how {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    border-bottom: 2px solid ;
+                    margin-left: 10px;
+                    /* identical to box height */
+
+
+                    /* black */
+
+                    color: #000000;
+
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+
+            .community-introduce {
+                padding: 130px 0px 0px 0px;
+
+                .community-title {
+                    font-weight: 600;
+                    font-size: 48px;
+                    line-height: 72px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    
+                    /* black */
+                    
+                    color: #000000;
+                }
+
+                .community-description {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    
+                    /* text phụ */
+                    
+                    color: #6D747C;
+
+                    padding-top: 24px;
+                }
+            }
+
+            .pass-mint {
+                padding-top: 48px;
+                display: flex;
+                align-items: flex-start;
+                gap: 6px;
+
+                .mint-button {
+                    cursor: pointer;
+                    background: #000000;
+                    border-radius: 8px;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 24px;
+                    /* identical to box height */
+                    text-transform: uppercase;
+                    color: #FFFFFF;
+                    padding: 12px 14px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+
+                    img {
+                        vertical-align: middle;
+                    }
+                }
+
+                .mint-count-control {
+                    .mint-count-button {
+                        border-radius: 8px;
+                        display: flex;
+                        align-items: center;
+                        color: #FFFFFF;
+
+                        font-size: 16px;
+
+                        .minus {
+                            background: #525454;
+                            border-radius: 8px 0px 0px 8px;
+                            padding: 7px 5px;
+
+                            .minus-internal {
+                                cursor: pointer;
+                                background: #525454;
+                                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.76);
+                                border-radius: 8px;
+                                font-weight: 300;
+                                padding: 0px 5px;
+                                font-size: 24px;
+                                line-height: 36px;
+                            }
+                        }
+
+                        .mint-count {
+                            padding: 0px 18px;
+                            background-color: black;
+                            font-weight: 300;
+                            font-size: 29px;
+                            line-height: 50px;
+                        }
+
+                        .plus {
+                            background: #525454;
+                            border-radius: 0px 8px 8px 0px;
+                            padding: 7px 5px;
+
+                            .plus-internal {
+                                cursor: pointer;
+                                background: #525454;
+                                box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.76);
+                                border-radius: 8px;
+                                font-weight: 300;
+                                font-size: 24px;
+                                padding: 0px 4px;
+                                line-height: 36px;
+                            }
+                        }
+                    }
+
+                    .mint-count-label {
+                        font-weight: 300;
+                        font-size: 14px;
+                        line-height: 21px;
+                        text-align: center;
+                    }
+
+                }
+            }
+        }
+
+        .phone {
+            flex: 0 0 50%;
+
+            .phone-preview {
+                padding-top: 54px;
+
+            }
+
+            .works {
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                padding-right: 70px;
+
+                .play {
+                    padding: 30px;
+                    border-radius: 50%;
+                    border: 1px solid;
+                    position: relative;
+                    cursor: pointer;
+
+                    img {
+                        position: absolute;
+                        top: calc(50% - 11px);
+                        left: calc(50% - 6px);
+                    }
+                }
+
+                .how {
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 24px;
+                    border-bottom: 2px solid ;
+                    margin-left: 10px;
+                    /* identical to box height */
+
+
+                    /* black */
+
+                    color: #000000;
+                    a {
+                        color: #000000;
+                    }
+                }
+            }
+        }
+        .bg {
+            // position: absolute;
+            // width: 100%;
+            // max-width: 1440px;
+            // height: 946.22px;
+            // // left: -335px;
+            // left: calc(50% - 720px);
+            // top: -211px;
+
+            // background: linear-gradient(179.79deg, rgba(235, 240, 255, 0.78) 0.19%, rgba(251, 251, 251, 0) 27.44%);
+            // transform: matrix(1, 0, 0, -1, 0, 0);
+
+        }
+    }
+}
+
+@media (max-width: 1439px) {
+    .dashboard {
+        
+        .container {
+            padding: 0px 4vw;
+        }
+    }
+}
+
+@media (max-width: 1218px) and (min-width: 1024px) {
+    .dashboard {
+        .phone {
+            .phone-preview {
+                img {
+                    width: 55vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023px) {
+    .dashboard {
+        .container {
+        flex-direction: column-reverse;
+            .community {
+                display: flex;
+                flex-direction: column-reverse;
+                .works {
+                    display: flex;
+                    justify-content: start;
+                    padding-top: 20px;
+                }
+
+                .community-introduce {
+                    padding: 80px 0px 0px 0px;
+                }
+
+                .pass-mint {
+                    justify-content: center;
+                }
+            }
+
+            .phone {
+                .phone-preview {
+                    text-align: center;
+                    img {
+                        max-width: 100%;
+                    }
+                }
+                .works {
+                    display: none;
+                }
+            }
+        }
+    }
+}

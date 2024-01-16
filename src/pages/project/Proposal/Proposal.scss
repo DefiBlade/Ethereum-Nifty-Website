@@ -1,0 +1,120 @@
+.proposal {
+    .interest-panel {
+        text-overflow: ellipsis;
+        word-break: break-all;
+        .interest-body {
+            background-color: #FFFFFF;
+            padding: 2vw 4vw 2vw 4vw;
+            --bs-gutter-x : 0;
+            .mb-3 {
+                margin-top: 0.5rem;
+                margin-bottom: 0.4rem !important;
+            }
+            .interest {
+                display: inline-block !important;
+                padding-left: 0.5rem;
+                .second {
+                    margin-left: 2rem;
+                    margin-right: 0.5rem;
+                }
+            }
+            label {
+                padding-left: 0.5rem !important;
+            }
+        }
+        .form-check {
+            margin-left: 3rem !important;
+        }
+        .form-label {
+            small {
+                font-weight: 400 !important;
+            }
+        }
+    }
+
+    #link {
+        color: #000;
+    }
+    .control-bundle {
+        padding-top: 2.5rem;
+    }
+
+    .pull-right {
+        display: flex;
+        .interest {
+            padding-top: 0.4rem;
+            .disclaimer {
+                text-decoration: underline;
+            }
+        }
+        button {
+            vertical-align: center;
+            margin-left: 1vw;
+        }
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .proposal {
+        #second-label {
+            display: block;
+        }
+
+        #third-label {
+            display: block;
+        }
+    }
+}
+
+@media only screen and (max-width : 991px) and (min-width: 768px) {
+    .proposal {
+        #second-label {
+            display: block;
+        }
+
+        #third-label {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .proposal {
+        #second-label {
+            display: none;
+        }
+        
+        #third-label {
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 183px) {
+    .proposal {
+        .interest-panel {
+            .interest-body {
+                .interest {
+                    .second {
+                        display: block;
+                        margin-left: 0;
+                    }
+                }
+                label {
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+
+// @media o screen {
+    
+// }
+#popover-contained {
+    max-width: 50vw !important;
+}
+// #popover-contained {
+//     max-width: 50vw;
+// }

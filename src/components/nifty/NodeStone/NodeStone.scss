@@ -1,0 +1,201 @@
+.nodeStone {
+    position: relative;
+    width: 100vw;
+    transform: translate3d(-50%, 0, 0);
+    left: 50%;
+    z-index: 101;
+
+    &__topTransition {
+        position: absolute;
+        top: 5px;
+        width: 100%;
+        transform: translateY(-100%);
+        
+        img {
+            width: 100%;
+        }
+    }
+
+    &__bottomTransition {
+        position: relative;
+        bottom: 1px;
+        width: 100%;
+        background: #efefef;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &__main {
+        position: relative;
+        background: #efefef;
+
+        &__jewelLeft {
+            position: absolute;
+            left: 0;
+            top: 50px;
+
+            img {
+                width: 180px;
+            }
+        }
+
+        &__jewelRight {
+            position: absolute;
+            right: 0;
+            bottom: 50px;
+
+            img {
+                width: 80px;
+            }
+        }
+
+        &__mint {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            button {
+                background: transparent !important;
+            }
+
+            &__place {
+                margin-right: 10px;
+                img {
+                    width: 300px;
+                }
+            }
+
+            &__counter {
+                display: flex;
+                align-items: center;
+
+                button {
+                    margin: 0 10px;
+                    img {
+                        width: 50px;
+                    }
+                }
+
+                div {
+                    font-family: Roboto;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 51px;
+                    line-height: 60px;
+
+                    color: #989898;
+                }
+            }
+        }
+
+        &__title {
+            text-align: center;
+
+            img {
+                width: 600px;
+            }
+        }
+
+        &__desc {
+            font-family: Songwriter Draft;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: #000000;
+            padding: 100px 50px;
+            padding-bottom: 50px;
+        }
+
+        &__content {
+            font-family: Roboto;
+            font-style: normal;
+            font-weight: 300;
+            font-size: 28px;
+            line-height: 33px;
+
+            color: #000000;
+            padding: 100px 50px;
+            padding-top: 50px;
+        }
+    }
+}
+
+@media (max-width: 1440px) {
+    .nodeStone {
+        &__main {
+            &__jewelLeft {
+                img {
+                    width: 12vw;
+                }
+            }
+
+            &__jewelRight {
+                img {
+                    width: 4vw;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .nodeStone {
+        &__main {
+            &__jewelLeft {
+                top: 5vw;
+            }
+
+            &__jewelRight {
+                bottom: 5vw;
+            }
+
+            &__mint {
+                &__place {
+                    margin-right: 1vw;
+                    img {
+                        width: 31vw;
+                    }
+                }
+    
+                &__counter {
+                    button {
+                        margin: 0 1vw;
+                        img {
+                            width: 5.1vw;
+                        }
+                    }
+    
+                    div {
+                        font-size: 5.2vw;
+                        line-height: 6.1vw;
+                    }
+                }
+            }
+
+            &__title {
+                img {
+                    width: 70vw;
+                }
+            }
+
+            &__desc {
+                font-size: 4vw;
+                line-height: 4.8vw;
+                padding: 10vw 5vw;
+                padding-bottom: 5vw;
+            }
+
+            &__content {
+                padding: 10vw 5vw;
+                padding-top: 5vw;
+
+                font-size: 3.5vw;
+                line-height: 4.5vw;
+            }
+        }
+    }
+}
